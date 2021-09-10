@@ -94,7 +94,7 @@ for i, j in enumerate(href_flag):
         tosend_content.append(content[i])
 
 # print(href_group)
-if(tosend_content !=''):
+if(tosend_content !=[]):
     #获取token
     token = access_token()
     for i,j in enumerate(tosend_content):
