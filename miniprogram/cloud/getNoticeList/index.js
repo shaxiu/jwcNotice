@@ -12,6 +12,7 @@ exports.main = async (event, context) => {
     title: true,
     pubDate: true
   })
+  .orderBy('_id','desc')
   .skip(event.len)
   .limit(event.num)
   .get()
